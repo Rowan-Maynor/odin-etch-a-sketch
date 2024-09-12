@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-row, .container-col {
+    display: flex;
+}
+
+.content-row {
+    flex-direction: row;
+}
+
+.content-col {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+}
+
+#outerBox {
+    border: solid;
+    border-radius: 15px;
+    flex: 1;
+    height: 80vh;
+}
+
+.main {
+    flex: 1;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}

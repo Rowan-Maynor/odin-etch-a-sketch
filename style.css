@@ -25,6 +25,7 @@
     border-radius: 15px;
     flex: 1;
     height: 80vh;
+    padding: 10px;
 }
 
 .main {
@@ -33,4 +34,10 @@
     margin-bottom: 10vh;
     margin-left: 20vh;
     margin-right: 20vh;
+}
+
+#divGridContainer {
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
 }

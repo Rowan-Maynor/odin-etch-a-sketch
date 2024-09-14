@@ -1,11 +1,12 @@
 function generateGrid (gridSize) {
 
     const gridContainer = document.createElement("div");
-    const gridSquareSize = 100/gridSize;
+    const screenPercent = 90;
+    const gridSquareSize = screenPercent/gridSize;
     gridContainer.id = "gridContainer";
     gridContainer.style.border = "solid";
-    gridContainer.style.borderWidth = "10px"
-    gridContainer.style.width = `100vh`;
+    gridContainer.style.borderWidth = "10px";
+    gridContainer.style.width = `${screenPercent}vh`;
     gridContainer.style.margin = "auto";
     
     for (let i = 0; i < gridSize; i++){

@@ -1,7 +1,11 @@
 function generateGrid (gridSize) {
 
     const gridContainer = document.createElement("div");
+    const gridSquareSize = 100/gridSize;
     gridContainer.id = "gridContainer";
+    gridContainer.style.border = "solid";
+    gridContainer.style.borderWidth = "10px"
+    gridContainer.style.width = `100vh`;
     
     for (let i = 0; i < gridSize; i++){
 
@@ -13,7 +17,6 @@ function generateGrid (gridSize) {
         for(let j = 0; j < gridSize; j++){
 
             const gridCol = document.createElement("div");
-            const gridSquareSize = 100/gridSize;
 
             gridCol.id = `gridCol${i}-${j}`;
             gridCol.style.height = `${gridSquareSize}vh`;

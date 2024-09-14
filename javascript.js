@@ -1,25 +1,41 @@
 function generateGrid (gridSize) {
-    console.log("Function Ran");
+
+    const gridContainer = document.createElement("div");
+    gridContainer.id = "gridContainer";
+    
     for (let i = 0; i < gridSize; i++){
-        console.log("Creating divRow");
+
         const gridRow = document.createElement("div");
+
         gridRow.id = `gridRow${i}`;
         gridRow.style.display = "flex";
-        console.log("divRow Created");
 
         for(let j = 0; j < gridSize; j++){
+
             const gridCol = document.createElement("div");
             const gridSquareSize = 100/gridSize;
+
             gridCol.id = `gridCol${i}-${j}`;
             gridCol.style.height = `${gridSquareSize}vh`;
             gridCol.style.width = `${gridSquareSize}vh`;
             gridCol.style.border = "solid";
+
+            gridCol.addEventListener("mouseover", () =>{
+
+                gridCol.style.backgroundColor = "black";
+
+            });
+
             gridRow.appendChild(gridCol);
+
         }
 
-        document.body.appendChild(gridRow);
+        gridContainer.appendChild(gridRow);
+
     }
+
+    document.body.appendChild(gridContainer);
 
 }
 
-generateGrid(5);
+generateGrid(16);

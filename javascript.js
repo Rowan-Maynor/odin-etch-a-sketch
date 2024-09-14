@@ -6,6 +6,7 @@ function generateGrid (gridSize) {
     gridContainer.style.border = "solid";
     gridContainer.style.borderWidth = "10px"
     gridContainer.style.width = `100vh`;
+    gridContainer.style.margin = "auto";
     
     for (let i = 0; i < gridSize; i++){
 

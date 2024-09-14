@@ -18,7 +18,6 @@ function generateGrid (gridSize) {
             gridCol.id = `gridCol${i}-${j}`;
             gridCol.style.height = `${gridSquareSize}vh`;
             gridCol.style.width = `${gridSquareSize}vh`;
-            gridCol.style.border = "solid";
 
             gridCol.addEventListener("mouseover", () =>{
 

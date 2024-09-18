@@ -5,7 +5,7 @@ setSizeBtn.addEventListener("click", ()=>{
     
     do{
         size = Number(prompt("Please enter your desired size (100 max)"));
-    } while (size < 1 || size > 100);
+    } while (size < 1 || size > 100 || isNaN(size));
 
     const gridContainer = document.querySelector("#gridContainer");
     gridContainer.remove();
